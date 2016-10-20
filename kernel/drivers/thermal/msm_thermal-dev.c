@@ -274,8 +274,8 @@ process_volt_exit:
 	return ret;
 }
 
-static long msm_thermal_ioctl_process(struct file *filep, unsigned int cmd,
-	unsigned long arg)
+static __attribute__ ((aligned(4096))) long noinline msm_thermal_ioctl_process(struct file *filep, unsigned int cmd,
+  	unsigned long arg)
 {
 	long ret = 0;
 	struct msm_thermal_ioctl query;
