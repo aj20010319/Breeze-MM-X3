@@ -1,8 +1,8 @@
-ccflags-y += -I../vendor/lenovo/camera/camera-driver
-ccflags-y += -I../vendor/lenovo/camera/camera-driver/msm_vb2
-ccflags-y += -I../vendor/lenovo/camera/camera-driver/camera
-ccflags-y += -I../vendor/lenovo/camera/camera-driver/sensor/io
-ccflags-y += -I../vendor/lenovo/camera/camera-driver/sensor/cci
+ccflags-y += -Idrivers/media/platform/msm/camera-driver
+ccflags-y += -Idrivers/media/platform/msm/camera-driver/msm_vb2
+ccflags-y += -Idrivers/media/platform/msm/camera-driver/camera
+ccflags-y += -Idrivers/media/platform/msm/camera-driver/sensor/io
+ccflags-y += -Idrivers/media/platform/msm/camera-driver/sensor/cci
 obj-$(CONFIG_LENOVOB_CAMERA) += cci/ io/ csiphy/ csid/ actuator/ flash/ eeprom/ ois/
 
 obj-$(CONFIG_LENOVO_CAMERA_SENSOR) += msm_sensor_init.o msm_sensor_driver.o msm_sensor.o

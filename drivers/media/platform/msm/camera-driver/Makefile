@@ -1,12 +1,12 @@
-ccflags-y += -I../vendor/lenovo/camera/camera-driver
-ccflags-y += -I../vendor/lenovo/camera/camera-driver/sensor
-ccflags-y += -I../vendor/lenovo/camera/camera-driver/codecs
-ccflags-y += -I../vendor/lenovo/camera/camera-driver/isps
-ccflags-y += -I../vendor/lenovo/camera/camera-driver/pproc
-ccflags-y += -I../vendor/lenovo/camera/camera-driver/msm_vb2
-ccflags-y += -I../vendor/lenovo/camera/camera-driver/camera
-ccflags-y += -I../vendor/lenovo/camera/camera-driver/jpeg_10
-ccflags-y += -I../vendor/lenovo/camera/camera-driver/fd
+ccflags-y += -Idrivers/media/platform/msm/camera-driver
+ccflags-y += -Idrivers/media/platform/msm/camera-driver/sensor
+ccflags-y += -Idrivers/media/platform/msm/camera-driver/codecs
+ccflags-y += -Idrivers/media/platform/msm/camera-driver/isps
+ccflags-y += -Idrivers/media/platform/msm/camera-driver/pproc
+ccflags-y += -Idrivers/media/platform/msm/camera-driver/msm_vb2
+ccflags-y += -Idrivers/media/platform/msm/camera-driver/camera
+ccflags-y += -Idrivers/media/platform/msm/camera-driver/jpeg_10
+ccflags-y += -Idrivers/media/platform/msm/camera-driver/fd
 
 obj-$(CONFIG_LENOVOB_CAMERA) += msm.o
 obj-$(CONFIG_LENOVOB_CAMERA) += camera/
