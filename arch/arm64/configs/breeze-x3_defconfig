@@ -1082,7 +1082,7 @@ CONFIG_EEPROM_93CX6=y
 #
 # Texas Instruments shared transport line discipline
 #
-# CONFIG_TI_ST is not set
+CONFIG_TI_ST=m
 # CONFIG_SENSORS_LIS3_SPI is not set
 # CONFIG_SENSORS_LIS3_I2C is not set
 
@@ -2485,7 +2485,7 @@ CONFIG_RADIO_ADAPTERS=y
 #
 # Texas Instruments WL128x FM driver (ST based)
 #
-# CONFIG_RADIO_WL128X is not set
+CONFIG_RADIO_WL128X=m
 # CONFIG_RADIO_IRIS is not set
 CONFIG_RADIO_SILABS=y
 # CONFIG_CYPRESS_FIRMWARE is not set
